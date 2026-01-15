@@ -1,12 +1,35 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Practice Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Welcome to My Bio Page</h1>
-    <img src="https://mega.nz/file/MQkzkZCb#YSGr9-l0P8B1U8cqX47S1gBVJwHNOwHu4XxXFnpLlog" alt="test">
+  <div class="container">
+    <h1>🌟 Daily Practice Streak</h1>
+
+    <!-- User Setup -->
+    <div id="setup" class="card">
+      <p>What’s your name?</p>
+      <input type="text" id="username" placeholder="e.g., Emma" maxlength="20" />
+      <button id="save-name">Start Tracking!</button>
+    </div>
+
+    <!-- Main Tracker -->
+    <div id="tracker" class="card" style="display: none;">
+      <div class="streak-display">
+        <span id="streak-number">0</span>
+        <span class="day-label">days in a row!</span>
+      </div>
+      <button id="practice-btn">✅ I Practiced Today!</button>
+      <p id="message"></p>
+      <button id="logout" class="logout">Switch Student</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
