@@ -29,7 +29,13 @@
       <button id="logout" class="logout">Switch Student</button>
     </div>
   </div>
-
+<button onclick='testAPI()'>🔍 Test API</button>
+<script>
+async function testAPI() {
+  const res = await fetch("https://script.google.com/macros/s/AKfycby-wtz6qpYpcNYbeYPrCdNVtlU5XscgFVcyqaRElTMHrb4OUkZpPgRwl-OrnS2vzwsp/exec" + "?userId=test");
+  alert(JSON.stringify(await res.json(), null, 2));
+}
+</script>
   <script src="script.js"></script>
 </body>
 </html>

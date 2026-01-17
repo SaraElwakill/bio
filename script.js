@@ -1,5 +1,5 @@
 // 🔑 REPLACE WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
-const API_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycby-wtz6qpYpcNYbeYPrCdNVtlU5XscgFVcyqaRElTMHrb4OUkZpPgRwl-OrnS2vzwsp/exec";
 
 // DOM elements
 const setupDiv = document.getElementById("setup");
