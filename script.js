@@ -47,6 +47,7 @@ function showTracker(name) {
 function getToday() {
   return new Date().toISOString().split("T")[0];
 }
+
 // Get yesterday
 function getYesterday() {
   const d = new Date();
@@ -96,7 +97,8 @@ practiceBtn.addEventListener("click", async () => {
     }
 
     // Save to Google Sheet
-    await fetch(API_URL, {      method: "POST",
+    await fetch(API_URL, {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, date: today, streak: newStreak })
     });
